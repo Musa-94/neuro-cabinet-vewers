@@ -4,8 +4,6 @@ docker kill $(docker ps -q)
 docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)
 
-git clone -b feat/v3-fix-multiple-studyuids https://github.com/Musa-94/neuro-cabinet-vewers
-
 cd ~/neuro-cabinet-vewers
 yarn config set workspaces-experimental true
 yarn install
